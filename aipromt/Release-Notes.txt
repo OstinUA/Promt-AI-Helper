@@ -1,0 +1,10 @@
+Напиши Release Notes для Гитхаба.
+Сперва идет англиский потом русский.
+Пример: 
+## EN: Release Notes — Version 1.0.0
+### Key Improvements:**
+
+---
+
+## RU: Release Notes — Версия 1.0.0
+### Основные улучшения:**
