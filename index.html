@@ -32,7 +32,6 @@
     overflow: hidden;
   }
 
-  /* Шапка с настройками */
   header {
     background-color: var(--bg-panel);
     border-bottom: 1px solid var(--border);
@@ -75,7 +74,7 @@
 
   input:focus { border-color: var(--accent); }
 
-  button {
+  .btn-main {
     background-color: var(--success);
     color: #fff;
     border: none;
@@ -86,8 +85,24 @@
     transition: background-color 0.2s;
   }
 
-  button:hover { background-color: #2c974b; }
-  button:disabled { background-color: var(--bg-hover); color: var(--text-muted); cursor: not-allowed; }
+  .btn-main:hover { background-color: #2c974b; }
+  .btn-main:disabled { background-color: var(--bg-hover); color: var(--text-muted); cursor: not-allowed; }
+
+  .btn-small {
+    background-color: var(--bg-hover);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  .btn-small:hover { background-color: var(--border); }
+  .btn-small.copied { background-color: var(--success); color: #fff; border-color: var(--success); }
 
   #status {
     margin-left: auto;
@@ -98,14 +113,12 @@
   #status.error { color: var(--error); }
   #status.success { color: var(--success); }
 
-  /* Основная рабочая область */
   .workspace {
     display: flex;
     flex: 1;
     overflow: hidden;
   }
 
-  /* Панели колонок */
   .column {
     display: flex;
     flex-direction: column;
@@ -126,6 +139,10 @@
     font-weight: 600;
     letter-spacing: 0.5px;
     background-color: var(--bg-panel);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
   }
 
   .list-container {
@@ -134,7 +151,6 @@
     padding: 10px;
   }
 
-  /* Элементы списков */
   .list-item {
     padding: 8px 12px;
     margin-bottom: 4px;
@@ -153,7 +169,6 @@
     color: #fff;
   }
 
-  /* Область чтения текста */
   .text-content-wrapper {
     flex: 1;
     overflow-y: auto;
@@ -177,7 +192,6 @@
     font-size: 14px;
   }
 
-  /* Скроллбары */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
@@ -196,7 +210,7 @@
   
   <div class="input-group">
     <label>Repo</label>
-    <input type="text" id="ghRepo" placeholder="Repository name">
+    <input type="text" id="ghRepo" value="Promt-AI-Helper" placeholder="Repository name">
   </div>
   
   <div class="input-group">
@@ -204,7 +218,7 @@
     <input type="text" id="ghBranch" value="main" style="width: 80px;">
   </div>
 
-  <button id="loadBtn" onclick="loadRepository()">Load Files</button>
+  <button id="loadBtn" class="btn-main" onclick="loadRepository()">Load Files</button>
 
   <div id="status">Ready</div>
 </header>
@@ -213,7 +227,7 @@
   <div class="column col-folders">
     <div class="column-header">Folders</div>
     <div class="list-container" id="folderList">
-      <div class="empty-state">Enter repo details and click Load</div>
+      <div class="empty-state">Loading repository data...</div>
     </div>
   </div>
 
@@ -225,7 +239,10 @@
   </div>
 
   <div class="column col-content">
-    <div class="column-header" id="contentHeader">File Content</div>
+    <div class="column-header">
+      <span id="contentHeader">File Content</span>
+      <button id="copyBtn" class="btn-small" style="display: none;" onclick="copyCode()">Copy</button>
+    </div>
     <div class="text-content-wrapper">
       <pre id="textContent"><div class="empty-state">Select a text file to read</div></pre>
     </div>
@@ -237,32 +254,55 @@ let allFiles = [];
 let foldersData = {}; 
 let currentFolder = null;
 
+const elUser = document.getElementById('ghUser');
+const elRepo = document.getElementById('ghRepo');
+const elBranch = document.getElementById('ghBranch');
+
 const elStatus = document.getElementById('status');
 const elFolderList = document.getElementById('folderList');
 const elFileList = document.getElementById('fileList');
 const elTextContent = document.getElementById('textContent');
 const elContentHeader = document.getElementById('contentHeader');
 const btnLoad = document.getElementById('loadBtn');
+const btnCopy = document.getElementById('copyBtn');
 
 function setStatus(text, type = 'normal') {
   elStatus.textContent = text;
   elStatus.className = type;
 }
 
+function loadSettings() {
+  const savedUser = localStorage.getItem('txtViewer_user');
+  const savedRepo = localStorage.getItem('txtViewer_repo');
+  const savedBranch = localStorage.getItem('txtViewer_branch');
+
+  if (savedUser) elUser.value = savedUser;
+  if (savedRepo) elRepo.value = savedRepo;
+  if (savedBranch) elBranch.value = savedBranch;
+}
+
+function saveSettings() {
+  localStorage.setItem('txtViewer_user', elUser.value.trim());
+  localStorage.setItem('txtViewer_repo', elRepo.value.trim());
+  localStorage.setItem('txtViewer_branch', elBranch.value.trim());
+}
+
 async function loadRepository() {
-  const user = document.getElementById('ghUser').value.trim();
-  const repo = document.getElementById('ghRepo').value.trim();
-  const branch = document.getElementById('ghBranch').value.trim() || 'main';
+  const user = elUser.value.trim();
+  const repo = elRepo.value.trim();
+  const branch = elBranch.value.trim() || 'main';
 
   if (!user || !repo) {
     setStatus('Error: Username and Repository are required.', 'error');
     return;
   }
 
+  saveSettings();
+
   btnLoad.disabled = true;
+  btnCopy.style.display = 'none';
   setStatus('Fetching data...', 'normal');
   
-  // Очистка предыдущих данных
   allFiles = [];
   foldersData = {};
   elFolderList.innerHTML = '';
@@ -278,10 +318,8 @@ async function loadRepository() {
     }
 
     const data = await response.json();
-    
-    // Фильтруем только текстовые файлы (.txt, .md, .csv, .json и т.д.)
-    // Можно оставить только .txt, изменив регулярное выражение на /\.txt$/i
-    const textFiles = data.tree.filter(f => f.type === 'blob' && /\.(txt|md|csv|json)$/i.test(f.path));
+
+    const textFiles = data.tree.filter(f => f.type === 'blob' && /\.(txt|md|csv|json|js|html|css)$/i.test(f.path));
 
     if (textFiles.length === 0) {
       setStatus('No text files found in this repository.', 'error');
@@ -290,7 +328,6 @@ async function loadRepository() {
       return;
     }
 
-    // Группировка файлов по папкам
     textFiles.forEach(f => {
       const parts = f.path.split('/');
       const fileName = parts.pop();
@@ -328,10 +365,8 @@ function renderFolders() {
     div.textContent = folder;
     
     div.onclick = () => {
-      // Подсветка активной папки
       document.querySelectorAll('#folderList .list-item').forEach(el => el.classList.remove('active'));
       div.classList.add('active');
-      
       renderFiles(folder);
     };
     
@@ -350,10 +385,8 @@ function renderFiles(folderPath) {
     div.textContent = file.name;
     
     div.onclick = () => {
-      // Подсветка активного файла
       document.querySelectorAll('#fileList .list-item').forEach(el => el.classList.remove('active'));
       div.classList.add('active');
-      
       loadFileContent(file);
     };
     
@@ -364,6 +397,7 @@ function renderFiles(folderPath) {
 async function loadFileContent(file) {
   elContentHeader.textContent = file.name;
   elTextContent.textContent = 'Loading...';
+  btnCopy.style.display = 'none';
   
   try {
     const response = await fetch(file.url);
@@ -371,10 +405,35 @@ async function loadFileContent(file) {
     
     const text = await response.text();
     elTextContent.textContent = text;
+    btnCopy.style.display = 'block';
   } catch (error) {
     elTextContent.textContent = `Error loading file: ${error.message}`;
   }
 }
+
+function copyCode() {
+  const textToCopy = elTextContent.textContent;
+  if (!textToCopy) return;
+
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    btnCopy.classList.add('copied');
+    btnCopy.textContent = 'Copied!';
+    
+    setTimeout(() => {
+      btnCopy.classList.remove('copied');
+      btnCopy.textContent = 'Copy';
+    }, 2000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  loadSettings();
+  if (elUser.value && elRepo.value) {
+    loadRepository();
+  }
+});
 </script>
 </body>
 </html>
