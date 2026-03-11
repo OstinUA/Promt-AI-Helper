@@ -47,6 +47,12 @@
     letter-spacing: 1px;
     color: var(--text-main);
     margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .logo:hover {
+    color: var(--accent);
   }
 
   .input-group {
@@ -88,11 +94,11 @@
   .btn-main:hover { background-color: #2c974b; }
   .btn-main:disabled { background-color: var(--bg-hover); color: var(--text-muted); cursor: not-allowed; }
 
-.btn-small {
+  .btn-small {
     background-color: var(--bg-hover);
     color: var(--text-main);
     border: 1px solid var(--border);
-    padding: 12px 100px;
+    padding: 8px 24px;
     border-radius: 6px;
     font-size: 13px;
     font-weight: 600;
@@ -201,7 +207,7 @@
 <body>
 
 <header>
-  <div class="logo">TXT//VIEWER</div>
+  <a href="https://github.com/OstinUA/Promt-AI-Helper" target="_blank" class="logo">TXT//VIEWER</a>
   
   <div class="input-group">
     <label>User</label>
