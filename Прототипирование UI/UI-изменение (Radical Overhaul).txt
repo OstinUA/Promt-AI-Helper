@@ -6,4 +6,4 @@ Enforce the following strict constraints:
 3. Component Isolation: Refactor the monolithic HTML/UI structure into semantic, modular sections for better maintainability.
 4. Logic Lockdown: You are strictly forbidden from altering variable names used for data binding, state hooks, or backend fetch calls. Only the HTML structure and CSS/Tailwind classes may be heavily modified.
 
-Output only the completely redesigned, production-ready code. Do not include theoretical UX explanations or conversational filler. [INSERT EXISTING UI CODE AND SPECIFIC GOALS HERE]
+Output only the completely redesigned, production-ready code. Do not include theoretical UX explanations or conversational filler.

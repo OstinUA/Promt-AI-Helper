@@ -28,4 +28,4 @@ Please provide the output structured clearly by file name, separating each trans
 [Translated content here]
 
 **Source Content to Translate:**
-[INSERT YOUR ORIGINAL README.md TEXT HERE]
+[GET THE ORIGINAL TEXT OF THE README.md FILE FROM THE REPOSITORY]

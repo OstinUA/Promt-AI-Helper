@@ -1,1 +1,4 @@
-Expand the existing localization system by adding support for Russian, English, Ukrainian, Kazakh, Czech, Dutch, Swedish, German, Polish, French, Chinese, and Japanese. Refactor the architecture into a modular i18n structure where each language is stored in its own dedicated file using standard ISO locale codes. Ensure all translation keys remain strictly synchronized across all files to maintain application integrity and prevent runtime errors from missing strings. 
+Expand the existing localization system by adding support for 
+English, Chinese, Spanish, French, Portuguese, Russian, Japanese, German, Ukrainian, Polish, Dutch, Kazakh, Swedish, and Czech.
+Refactor the architecture into a modular i18n structure where each language is stored in its own dedicated file using standard ISO locale codes. 
+Ensure all translation keys remain strictly synchronized across all files to maintain application integrity and prevent runtime errors from missing strings. 

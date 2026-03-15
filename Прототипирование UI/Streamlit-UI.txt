@@ -6,4 +6,4 @@ Enforce the following strict constraints:
 3. UI/UX: Build a clean, structured interface using sidebar navigation (`st.sidebar`), explicit user inputs, and clear data validation before processing.
 4. Error Handling: Wrap all core execution blocks in `try-except`. Catch exceptions gracefully and use `st.error()` or `st.warning()` to display user-friendly messages. Never expose raw stack traces to the UI.
 
-Output only the complete, executable `app.py` code. Do not include markdown tutorials, generic advice, or conversational filler. [INSERT BACKEND LOGIC OR REQUIREMENTS HERE]
+Output only the complete, executable `app.py` code. Do not include markdown tutorials, generic advice, or conversational filler.

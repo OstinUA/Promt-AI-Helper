@@ -30,4 +30,4 @@ Please provide the output structured clearly by file name, separating each trans
 [Translated Japanese content]
 
 **Source Content to Translate:**
-[INSERT YOUR ORIGINAL ENGLISH README.md TEXT HERE]
+[GET THE ORIGINAL TEXT OF THE README.md FILE FROM THE REPOSITORY]

@@ -6,4 +6,4 @@ Enforce the following strict constraints:
 3. Serverless APIs: If backend logic is required, provide the accompanying Next.js Route Handler (`app/api/[route]/route.ts`) configured for Vercel's serverless environment.
 4. Reliability: Implement proper loading states (e.g., Suspense boundaries), strict TypeScript typing, and graceful error handling for all asynchronous API fetches.
 
-Output only the production-ready TypeScript code blocks (`.tsx` for components, `.ts` for APIs and types). Omit environment setup instructions, `package.json` configurations, and conversational filler. [INSERT COMPONENT REQUIREMENTS HERE]
+Output only the production-ready TypeScript code blocks (`.tsx` for components, `.ts` for APIs and types). Omit environment setup instructions, `package.json` configurations, and conversational filler.
