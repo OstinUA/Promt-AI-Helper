@@ -7,3 +7,6 @@ Enforce the following strict constraints:
 4. Absolute Logic Preservation: Do not touch any JavaScript logic, event listeners, state management, or data bindings. Modify only styling rules and utility classes.
 
 Output the exact, refactored code blocks containing only the aesthetic upgrades. Omit any markdown tutorials, generic design advice, or conversational filler.
+
+Apply all changes exclusively to stats_index.html. Do not create any new files. Do not modify any .py files.
+Output only the completely redesigned, production-ready code. Do not include theoretical UX explanations or conversational filler.
