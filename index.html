@@ -245,7 +245,7 @@
 <body>
 
 <header>
-  <a href="#" class="logo">TXT//EDITOR</a>
+  <a href="https://github.com/OstinUA/Promt-AI-Helper" target="_blank" class="logo">TXT//EDITOR</a>
   
   <div class="input-group">
     <label>User</label>
@@ -412,7 +412,7 @@ async function loadRepository() {
       const parts = f.path.split('/');
       const fileName = parts.pop();
       const folderPath = parts.length > 0 ? parts.join('/') : '/ (Root)';
-      const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${f.path}`;
+      const apiUrl = `https://api.github.com/repos/${user}/${repo}/contents/${f.path}?ref=${branch}`;
 
       if (!foldersData[folderPath]) {
         foldersData[folderPath] = [];
@@ -421,7 +421,7 @@ async function loadRepository() {
       foldersData[folderPath].push({
         path: f.path,
         name: fileName,
-        url: rawUrl,
+        url: apiUrl,
         sha: f.sha
       });
     });
@@ -483,7 +483,9 @@ async function loadFileContent(file) {
   fileActions.style.display = 'none';
   
   try {
-    const headers = {};
+    const headers = {
+      'Accept': 'application/vnd.github.v3.raw'
+    };
     if (elToken.value.trim()) {
         headers['Authorization'] = `Bearer ${elToken.value.trim()}`;
     }
