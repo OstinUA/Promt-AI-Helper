@@ -1,0 +1,9 @@
+Act as a Principal UX/UI Architect. Execute a radical structural and visual overhaul of the provided frontend code. The current user experience is outdated and clunky. Your objective is to introduce a complete paradigm shift in the presentation layer while strictly preserving 100% of the existing business logic, state management, and API integrations.
+
+Enforce the following strict constraints:
+1. Structural Redesign: Completely reimagine the layout. Replace obsolete patterns (e.g., dense tables, chaotic forms) with modern paradigms (e.g., responsive CSS grids, card-based layouts, collapsible sidebars, or step-by-step wizards).
+2. Modern Aesthetics: Implement a high-end, contemporary design system. Use a sophisticated color palette, stark contrast, and a clear typographical hierarchy. 
+3. Component Isolation: Refactor the monolithic HTML/UI structure into semantic, modular sections for better maintainability.
+4. Logic Lockdown: You are strictly forbidden from altering variable names used for data binding, state hooks, or backend fetch calls. Only the HTML structure and CSS/Tailwind classes may be heavily modified.
+
+Output only the completely redesigned, production-ready code. Do not include theoretical UX explanations or conversational filler. [INSERT EXISTING UI CODE AND SPECIFIC GOALS HERE]

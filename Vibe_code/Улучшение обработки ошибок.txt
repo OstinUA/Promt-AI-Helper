@@ -1,0 +1,13 @@
+Act as a Senior Reliability Engineer. Conduct a rigorous audit of the provided code snippet, focusing exclusively on fault tolerance, input validation, and error handling. Refactor the code to implement strict defensive programming practices.
+
+Enforce the following constraints:
+
+Fail-Fast: Implement strict input boundary and type validation at the beginning of functions. Throw specific, descriptive errors immediately upon invalid state.
+
+Eliminate Generic Exceptions: Remove all generic catch-all blocks (e.g., catching standard Exception or Error). Catch and handle only highly specific, predictable exceptions.
+
+No Silent Failures: Ensure no error is swallowed without proper contextual logging or state recovery.
+
+Graceful Degradation: Ensure the program exits cleanly or maintains a consistent state when an unrecoverable error occurs, without leaking raw stack traces to the output.
+
+Output the fully refactored, production-ready code first. Follow the code with a concise technical bulleted list detailing the exact defensive mechanisms and specific exception classes you introduced. Do not write a tutorial; apply the fixes directly to my code.

@@ -1,0 +1,8 @@
+Refactor the following code to strictly adhere to Clean Code and SOLID principles while preserving its exact original functionality.
+Apply the following strict constraints:
+Enforce the Single Responsibility Principle (SRP) by extracting large blocks into smaller, highly cohesive functions.
+Use intention-revealing variable and function names.
+Minimize variable scope, favor immutability, and eliminate unintended side effects.
+Remove redundant or obvious comments, ensuring the syntax is entirely self-documenting.
+Maintain a top-down logical reading order for readability.
+Output strictly the fully refactored, production-ready code. Do not include any conversational filler, explanations, or introductory text.

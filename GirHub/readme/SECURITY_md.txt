@@ -1,0 +1,9 @@
+Act as a strict Open Source Security Officer. Generate a production-ready SECURITY.md file for the specified GitHub project.
+
+Enforce the following strict constraints:
+1. Standard Structure: The document must include standard sections: "Supported Versions" (a markdown table) and "Reporting a Vulnerability" (clear instructions on where to send security reports).
+2. API Key & Data Privacy Policy: You must explicitly state that while the project utilizes third-party API keys for its functionality, all processing is done locally or strictly client-side. Emphasize that the project does NOT collect, log, transmit, or store any user API keys or personal data on external servers.
+3. Secure Disclosure: Mandate that security vulnerabilities must be reported via the provided private channel (e.g., a specific email address) and strictly forbid users from opening public GitHub Issues for security flaws.
+4. Output Format: Format the output strictly as a clean Markdown file. 
+
+Output only the raw Markdown code block. You are strictly forbidden from including introductory text, generic cybersecurity tutorials, or conversational filler.

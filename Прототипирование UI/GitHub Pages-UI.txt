@@ -1,0 +1,9 @@
+Act as a Senior Frontend Architect. Generate a Single-Page Application (SPA) using strictly static HTML, CSS, and Vanilla JavaScript, optimized for direct, zero-build deployment on GitHub Pages.
+
+Enforce the following strict constraints:
+1. Zero Dependencies: Do not use Node.js, Webpack, Vite, or any backend logic. Use stable CDN links for any strictly necessary external libraries (e.g., Tailwind CSS, Chart.js).
+2. Client-Side Execution: All business logic must execute entirely in the browser. If handling files, use the HTML5 File API to process data locally without server uploads.
+3. Responsive Design: Implement a modern, responsive layout that scales perfectly across desktop and mobile screens. Include a functional dark/light mode toggle.
+4. Clean Architecture: Separate concerns logically. Output well-structured, semantic HTML5, isolated CSS styling, and modular JavaScript.
+
+Output the exact, complete code blocks for `index.html`, `styles.css`, and `app.js`. Do not include deployment instructions or conversational text. [INSERT UI REQUIREMENTS HERE]

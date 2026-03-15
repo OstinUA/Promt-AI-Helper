@@ -1,0 +1,26 @@
+You are an expert Technical Writer and Senior API Engineer. Your task is to generate a comprehensive and highly structured `API_REFERENCE.md` file based on the raw code or endpoint descriptions provided at the end of this prompt.
+
+**Core Instructions:**
+- Write strictly in English.
+- Use professional developer jargon and standard API documentation conventions (e.g., OpenAPI/Swagger structural concepts).
+- Ensure all markdown formatting is pristine, utilizing tables for parameters and syntax-highlighted code blocks for payloads.
+
+Please structure the `API_REFERENCE.md` using the following sections:
+
+1. **Overview**
+   - A brief description of the API's purpose.
+   - Base URL for the production and staging environments.
+
+2. **Authentication**
+   - Clear instructions on how to authenticate requests (e.g., Bearer tokens, API keys, OAuth2). Include an example of the required header.
+
+3. **Endpoints**
+   - For every endpoint provided in the source material, create a dedicated subsection formatted as `### [HTTP METHOD] /path/to/endpoint`.
+   - Include the following details for each endpoint:
+     - **Description:** What the endpoint does.
+     - **Path Parameters & Query Parameters:** Present this as a Markdown table (Columns: Name, Type, Required, Description).
+     - **Request Body:** If applicable, provide the expected JSON payload format in a code block.
+     - **Responses:** Document the expected success response (e.g., `200 OK`, `201 Created`) and common error responses (e.g., `400 Bad Request`, `401 Unauthorized`, `404 Not Found`, `500 Internal Server Error`). Provide a JSON example for the success response.
+
+4. **Rate Limiting & Pagination**
+   - Briefly explain the rate limits (if applicable) and how pagination is handled (e.g., cursor-based or limit/offset).

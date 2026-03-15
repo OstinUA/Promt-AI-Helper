@@ -1,0 +1,9 @@
+Act as a Lead Fullstack Developer. Scaffold a Next.js (App Router) component and necessary API routes optimized for serverless deployment on Vercel, based on the provided requirements.
+
+Enforce the following strict constraints:
+1. Architecture: Use React Server Components by default. Mark client boundaries strictly with the `"use client"` directive only when hooks (useState, useEffect) or browser APIs are required.
+2. Styling: Implement responsive styling using Tailwind CSS utility classes directly in the markup.
+3. Serverless APIs: If backend logic is required, provide the accompanying Next.js Route Handler (`app/api/[route]/route.ts`) configured for Vercel's serverless environment.
+4. Reliability: Implement proper loading states (e.g., Suspense boundaries), strict TypeScript typing, and graceful error handling for all asynchronous API fetches.
+
+Output only the production-ready TypeScript code blocks (`.tsx` for components, `.ts` for APIs and types). Omit environment setup instructions, `package.json` configurations, and conversational filler. [INSERT COMPONENT REQUIREMENTS HERE]

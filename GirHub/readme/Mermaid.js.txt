@@ -1,0 +1,30 @@
+# TASK: Create a well-structured `Mermaid.md` file.
+
+## Instructions:
+
+You are a technical writer and system architect. Your goal is to produce a dedicated `Mermaid.md` file for our project's documentation. This file must serve as a clear and comprehensive visual explanation of the system's architecture.
+
+The file should include a Mermaid.js diagram and a detailed structural breakdown. Do not simply reproduce the example below, but use it as a reference for the type of diagram to generate and then detail it.
+
+## Output File Content Requirements:
+
+1.  **File Header:** Include a clear and descriptive title like `## Project Data Model Overview` or `## System Architecture Diagram`.
+
+2.  **Introduction:** A brief, single-sentence explanation of what this diagram illustrates and why it is useful for understanding the system.
+
+3.  **Mermaid Diagram Block:** Provide the complete Mermaid.js code within a standard markdown code block, specifically using a diagram type relevant to the system being documented (e.g., ER-diagram, Class Diagram, Flowchart, or Sequence Diagram). If no specific system context is provided, default to an illustrative but contextually logical data schema (for example, for an e-commerce platform).
+
+4.  **Detailed Breakdown Section:** After the diagram, create a section titled `### Structural Breakdown`. Under this section, provide an exhaustive, structured explanation that details:
+    * **Entities / Nodes:** List and describe every entity (e.g., database table, system component, service) shown in the diagram. Explain its purpose, key responsibilities, and the type of data it manages.
+    * **Relationships / Connections:** Explicitly detail each interaction and connection between entities. Clear up the meaning behind every relationship type and multiplicity (e.g., "a client **must** place **zero or more** orders", "the auth service **sends** requests **to** the user database"). Translate the visual syntax of the Mermaid diagram (lines, arrowheads, multiplicity indicators) into plain language.
+    * **Control Flow / Logic (if applicable):** If the diagram is a flowchart or sequence diagram, describe the logic, data flow, and the sequence of steps, explaining why the process is designed this way.
+
+5.  **Use Cases / Scenario Examples:** Optionally, provide a few short examples showing how this architectural structure would handle specific system scenarios.
+
+## Example Reference (Use only as a type reference):
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses

@@ -1,0 +1,9 @@
+Act as a Senior UI Designer and Frontend Engineer. Execute a strict cosmetic polish on the provided interface code. Your objective is to elevate the visual quality and professionalism of the UI without altering its current structural layout or underlying logic.
+
+Enforce the following strict constraints:
+1. Layout Preservation: Do not move, remove, or reorder any existing structural containers, grids, or flexboxes. The placement of all buttons, inputs, and text blocks must remain exactly where they are.
+2. Micro-Aesthetics: Drastically improve the visual finish. Apply consistent spacing (margin/padding), modern typography, subtle box-shadows, border-radius refinements, and a cohesive, professional color scheme.
+3. Interactive States: Ensure every interactive element (buttons, inputs, links) has explicit, smooth CSS transitions for `:hover`, `:focus`, and `:active` states to improve tactile feedback.
+4. Absolute Logic Preservation: Do not touch any JavaScript logic, event listeners, state management, or data bindings. Modify only styling rules and utility classes.
+
+Output the exact, refactored code blocks containing only the aesthetic upgrades. Omit any markdown tutorials, generic design advice, or conversational filler. [INSERT EXISTING UI CODE AND STYLING PREFERENCES HERE]

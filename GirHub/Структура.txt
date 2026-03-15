@@ -1,0 +1,1 @@
+Refactor the repository into a modular architecture by decoupling all inline code into separate files categorized by extension: .html, .css, .js, and .py. Ensure the directory structure follows standard conventions—while updating all internal links and imports to ensure the application remains functional. 

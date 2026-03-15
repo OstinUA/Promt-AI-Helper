@@ -1,0 +1,8 @@
+Generate professional GitHub Release Notes for version [X] using a synchronized bilingual format where English precedes Russian. Separate the two language blocks with a horizontal rule. Categorize the updates into Key Improvements, Bug Fixes, and Contributors to ensure a clear, readable changelog. The Russian section must be a high-quality technical translation that preserves the original context of the English content. Follow this exact markdown structure:
+## EN: Release Notes — Version 1.0.0
+### Key Improvements:**
+
+---
+
+## RU: Release Notes — Версия 1.0.0
+### Основные улучшения:**

@@ -1,0 +1,9 @@
+Act as a Principal Python Engineer specializing in Streamlit. Convert the provided backend logic into a production-ready, interactive Streamlit application.
+
+Enforce the following strict constraints:
+1. State Management: Implement robust session state management using `st.session_state` to prevent unnecessary component reruns and data loss across interactions.
+2. Performance: Use `st.cache_data` or `st.cache_resource` for all expensive computations, database queries, or external API calls.
+3. UI/UX: Build a clean, structured interface using sidebar navigation (`st.sidebar`), explicit user inputs, and clear data validation before processing.
+4. Error Handling: Wrap all core execution blocks in `try-except`. Catch exceptions gracefully and use `st.error()` or `st.warning()` to display user-friendly messages. Never expose raw stack traces to the UI.
+
+Output only the complete, executable `app.py` code. Do not include markdown tutorials, generic advice, or conversational filler. [INSERT BACKEND LOGIC OR REQUIREMENTS HERE]
