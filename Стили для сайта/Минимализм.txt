@@ -1,0 +1,7 @@
+Redesign the entire site in a dark minimalist style.
+Use a near-black background (#0a0a0a or #111111), off-white text (#e8e8e8), and a single accent color (e.g. #c8ff00 or #00e5ff).
+Remove all decorative elements, shadows, gradients, and unnecessary borders.
+Keep only essential UI: generous whitespace, clean sans-serif font (Inter or DM Sans), thin 1px dividers.
+Buttons should be ghost-style (transparent with border) or solid with no border-radius.
+All animations — disabled or reduced to 150ms opacity fade only.
+Apply to: CSS variables, component styles, layout spacing.

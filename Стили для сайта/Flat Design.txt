@@ -1,0 +1,10 @@
+Redesign the site in a dark flat design style (Flat Design 2.0).
+Background: very dark flat color (#121212 or #1a1a2e). Avoid gradients — solid fills only.
+Color palette: 3–4 flat accent colors maximum, e.g. coral (#ff6b6b), teal (#4ecdc4), cream (#ffe66d) on dark — no shading, no gradients.
+No shadows, no bevels, no textures. If depth is needed, use layered flat blocks (slightly lighter surface color).
+Typography: bold geometric sans-serif (Nunito, Poppins, or Futura). Clear hierarchy via size and weight only.
+Icons: flat, 2-tone (icon color + one accent color), stroke-based or solid — no gradients inside icons.
+Buttons: solid fill, no shadow, sharp or slightly rounded (border-radius: 6–8px), strong color contrast.
+Illustrations: flat vector style if any — no photo images unless converted to flat duotone.
+Layout: grid-based, generous padding, clear block separation via color contrast alone.
+Apply to all components, icons, and global CSS.

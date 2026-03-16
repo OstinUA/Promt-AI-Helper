@@ -1,0 +1,14 @@
+Redesign the site in a dark terminal hacker style — amber variant (not classic green).
+Background: near-black with very subtle warm tint (#0e0c08 or #111009).
+Primary text color: warm amber #ffb000. Secondary: #cc8800. Muted: #664400.
+Font: monospace throughout — JetBrains Mono, Fira Code, or Courier New. No sans-serif anywhere.
+All headings: uppercase, letter-spacing: 0.2em, font-weight: normal (monospace bold looks heavy).
+UI panels: dark background (#1a1500 or #181208), amber border (1px solid #ffb000, opacity 0.4).
+No border-radius anywhere — everything is sharp rectangular (border-radius: 0).
+Cursor effect: animated blinking block cursor (▮) at end of headings and input placeholders via CSS @keyframes.
+Scanline overlay: repeating-linear-gradient(transparent, transparent 2px, rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px) — applies to hero section only.
+Buttons: transparent background, amber border, amber text — solid fill #ffb000 + black text on hover.
+Inputs: transparent background, amber bottom border only (border-bottom: 1px solid #ffb000), no other borders.
+Links: amber color, underline on hover, no other decoration.
+Loading/progress indicators: ASCII-style bar [████░░░░░░]
+Apply to: all components, typography, forms, navigation.

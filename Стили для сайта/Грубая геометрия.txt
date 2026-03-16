@@ -1,0 +1,13 @@
+Redesign the site in a dark neubrutalist style.
+Background: dark graphite (#1a1a1a or #222222).
+Accent colors: acid lime (#b8ff00), hot pink (#ff2d78), electric yellow (#ffe600) — use 1–2 max.
+Typography: extremely bold (font-weight: 900), large sizes, mostly uppercase or all-caps section labels.
+  Use fonts like Space Grotesk, Archivo Black, or system UI with max weight.
+Borders: thick solid 2–3px borders in accent or off-white (#eeeeee).
+Shadows: hard offset box-shadow ONLY — no blur, no spread:
+  box-shadow: 4px 4px 0px #b8ff00  (or accent color)
+Cards and buttons: rectangular, no border-radius (border-radius: 0), hard shadow offset.
+Hover state: shadow collapses to 0 + element shifts 4px down-right (transform: translate(4px,4px)).
+Images: high-contrast, desaturated or duotone (CSS filter: contrast(1.2) grayscale(0.4)).
+No gradients, no blur effects, no decorative curves — everything is flat and aggressive.
+Apply to: all components, interactive elements, typography scale.

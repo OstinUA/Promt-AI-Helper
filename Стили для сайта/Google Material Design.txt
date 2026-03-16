@@ -1,0 +1,14 @@
+Redesign the site following Google Material Design 3 (Material You) in dark theme.
+Use the official dark color scheme:
+  --md-sys-color-background: #1c1b1f
+  --md-sys-color-surface: #1c1b1f
+  --md-sys-color-primary: #d0bcff
+  --md-sys-color-on-primary: #381e72
+  --md-sys-color-secondary: #ccc2dc
+  --md-sys-color-error: #f2b8b5
+Apply elevation using surface tones (not drop shadows) — overlay primary color at increasing opacity per elevation level.
+Components: FAB, chips, outlined text fields, filled buttons with rounded corners (border-radius: 20px for buttons, 12px for cards).
+Typography: Roboto or Google Sans — use Material type scale (Display, Headline, Title, Body, Label).
+Motion: use Material motion standards — emphasized easing (cubic-bezier(0.2, 0, 0, 1.0)), standard duration 300ms.
+Ripple effect on all interactive elements.
+Apply to all components, CSS custom properties, and layout.

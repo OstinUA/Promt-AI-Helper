@@ -1,0 +1,14 @@
+Redesign the site in a dark vaporwave / synthwave style.
+Background: very dark purple-black (#0d0015 or #100020).
+Add a perspective grid at the bottom of hero sections:
+  CSS grid lines in hot pink (#ff00aa) or electric blue (#00aaff), converging to horizon, opacity 0.3.
+Color palette: neon pink (#ff2d9b), electric violet (#9b59ff), cyan (#00f5ff), hot magenta (#ff00cc).
+Typography: retro chrome text effect on headings — use text-shadow with multiple colored layers:
+  text-shadow: 0 0 10px #ff2d9b, 0 0 30px #9b59ff, 0 0 60px #ff00cc
+  Font: Outrun Future, VCR OSD Mono, or any blocky retro font (fallback: monospace bold uppercase)
+UI panels: dark (#1a0030 background), neon-colored borders (1px, accent color), border-radius: 0 or 4px.
+Images: apply CSS filter duotone — magenta highlights, deep violet shadows.
+Buttons: dark fill with neon border + neon glow on hover (box-shadow: 0 0 12px currentColor).
+Decorative elements: horizontal scan lines overlay (repeating-linear-gradient, 2px lines, opacity 0.04).
+Animations: glitch effect on hover for headings (CSS keyframes shifting text-shadow offsets).
+Apply to: all components, hero sections, typography, backgrounds.

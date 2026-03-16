@@ -1,0 +1,9 @@
+Redesign the site in a dark hi-tech / cyberpunk style.
+Background: pure black (#000000) or very dark navy (#050a12).
+Accent colors: electric cyan (#00f5ff), neon green (#39ff14), or electric blue (#0077ff) — pick one as primary.
+Typography: sharp geometric sans-serif (Rajdhani, Exo 2, or Orbitron for headings).
+UI: sharp corners only (border-radius: 0), thin glowing borders (box-shadow: 0 0 6px #00f5ff), grid-based layout.
+Add subtle background grid pattern (CSS background-image with 1px lines, opacity 0.05).
+Data-like elements: monospace numbers, progress-bar components, blinking cursor on inputs.
+Animations: fast, precise (transform + opacity, 100–200ms), no easing curves — use steps() or linear.
+Apply to all components, typography scale, and layout.

@@ -1,0 +1,16 @@
+Redesign the site in a dark ink and paper / editorial art style.
+Background: dark paper tone — not pure black, use #111010 or #130f0f (very dark warm brown-black).
+Texture layer: subtle paper grain overlay — CSS SVG feTurbulence noise at 3% opacity over all backgrounds.
+Color palette: ink black (#0a0808), aged paper off-white (#e8e0d0), dried ink red (#8b1a1a), faded blue-ink (#1a3a5c).
+Typography:
+  Headings: classic serif with ink personality — Playfair Display, Libre Baskerville, or Abril Fatface.
+  Body: readable serif — Lora or PT Serif, 16–18px, line-height 1.8 (generously leaded like a printed book).
+  Pull quotes: large italic serif, muted ink tone, border-left 3px solid.
+Decorative ink elements:
+  Watercolor-wash blobs: CSS radial-gradient shapes at very low opacity (5–8%) in dark red or blue ink tones.
+  Ink splatter: irregular SVG dots/shapes near headings at 10–15% opacity.
+UI panels: no glassmorphism. Flat dark paper background with subtle aged border (1px dashed rgba(232,224,208,0.15)).
+Dividers: decorative — thin line with centered ornament (use Unicode: ❧ ✦ — or SVG flourish).
+Images: convert to duotone — deep black + aged cream. CSS: filter: sepia(0.4) contrast(1.1).
+Buttons: ink-stamp style — solid fill in ink color (#1a0f0f), off-white text, no border-radius or very slight (2px).
+Apply to: all typography, textures, components, background system.

@@ -1,0 +1,9 @@
+Redesign the site in a dark hand-drawn / sketch illustration style.
+Background: very dark charcoal (#141414 or #1a1a1a).
+Accent colors: chalk white (#f0ece0), warm orange (#f4845f), or pastel on dark (muted teal #5bbfad).
+Borders: use irregular, "sketchy" style — apply rough border effect via SVG filter or CSS (filter: url(#sketchy)) or use a hand-drawn border library (e.g. rough.js if available).
+Fonts: handwritten-style (Caveat, Patrick Hand, or Kalam for body; Permanent Marker for headings).
+Buttons and cards: slight rotation (-1deg to 1deg), dashed or hand-drawn borders.
+Icons: replace with outline/sketch-style SVGs.
+Textures: subtle paper/grain texture overlay on background (CSS noise or SVG feTurbulence).
+Apply to all UI components and global styles.

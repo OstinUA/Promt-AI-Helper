@@ -1,0 +1,18 @@
+Redesign the site in a dark biomorphic / organic style.
+Background: deep natural dark tones — dark moss (#0d1109), dark earth (#1a1208), or dark stone (#111113).
+Color palette — natural, muted, organic:
+  Moss green: #4a6741
+  Dark ochre: #7a5c2e
+  Warm graphite: #3d3830
+  Sage accent: #8fad7a
+  Bone off-white: #d4c9a8 (text)
+NO straight lines, NO sharp corners anywhere. Every container is a soft organic shape:
+  Cards: border-radius: 40% 60% 55% 45% / 45% 55% 60% 40% — blob-shaped using border-radius shorthand.
+  Sections: use SVG clip-path with organic blob paths for section backgrounds.
+  Buttons: pill shape (border-radius: 50px), but asymmetric: 30px 20px 25px 18px.
+Typography: organic, humanist — Nunito, Quicksand, or Bricolage Grotesque. Soft, rounded letterforms.
+Textures: CSS noise filter (feTurbulence) at 4% opacity to simulate natural material.
+Layout: avoid rigid grids — content blocks at slight rotations (-1deg to 1.5deg), staggered vertical rhythm.
+Animations: slow morphing blob shapes for decorative backgrounds — CSS @keyframes animating border-radius values over 8–12s.
+Spacing: generous, uneven — sections breathe at different rates, not uniform padding.
+Apply to: all border-radius values, clip-paths, color system, typography, background layers.

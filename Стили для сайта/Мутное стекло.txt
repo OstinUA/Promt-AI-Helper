@@ -1,0 +1,14 @@
+Redesign the entire site in a dark glassmorphism style.
+Base background: deep gradient (#0f0c29 → #302b63 → #24243e) as a fixed full-screen layer.
+All UI panels, cards, navbars, and modals: semi-transparent dark glass —
+  background: rgba(255, 255, 255, 0.05)
+  border: 1px solid rgba(255, 255, 255, 0.12)
+  backdrop-filter: blur(18px) saturate(160%)
+  border-radius: 16px
+Text: white (#ffffff) primary, rgba(255,255,255,0.6) secondary.
+Accent: soft violet (#a78bfa) or electric blue (#60a5fa) — for buttons, active states, links.
+Buttons: glass background with colored border (rgba accent), subtle inner glow on hover.
+No solid opaque surfaces anywhere. Every component should feel like frosted glass floating over the gradient backdrop.
+Shadows: box-shadow: 0 8px 32px rgba(0,0,0,0.4)
+Input fields: glass background, no solid fill, accent-colored focus ring.
+Apply to: all components, CSS variables, layout containers.

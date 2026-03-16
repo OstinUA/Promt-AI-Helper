@@ -1,0 +1,9 @@
+Redesign the site in a dark typographic / editorial style.
+Background: deep black (#0c0c0c) or dark ink (#111318).
+Color palette: white (#ffffff), light gray (#aaaaaa), and one strong accent (electric red #ff2d2d or bright yellow #ffe600).
+Typography is the hero: use large, bold display fonts (clash display, Bebas Neue, or Syne for headings; size 80–120px on desktop).
+Body text: clean readable serif or sans (IBM Plex Serif or Neue Haas Grotesk).
+Layout: text-heavy, editorial grid — asymmetric columns, oversized pull quotes, large letter-spacing on section labels.
+No decorative illustrations — all visual interest comes from type scale, weight contrast, and layout.
+Minimal imagery; if images used, they should be dark, high-contrast or duotone.
+Apply to all typography, layout grid, and component hierarchy.

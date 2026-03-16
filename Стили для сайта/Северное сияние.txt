@@ -1,0 +1,13 @@
+Redesign the site in a dark aurora borealis style.
+Base background: very deep dark navy (#060b1a or #070d1f) — fixed, full screen.
+Atmospheric background layer: 3–4 large blurred radial color blobs (position: fixed, z-index: -1):
+  - Soft teal/green blob: rgba(20, 200, 150, 0.12), width ~600px, blur 120px
+  - Soft violet blob: rgba(130, 80, 255, 0.10), width ~500px, blur 100px
+  - Soft cyan blob: rgba(0, 200, 255, 0.08), width ~400px, blur 90px
+  Animate blobs slowly: CSS @keyframes with translate over 12–20s, ease-in-out, infinite alternate.
+UI panels: dark semi-transparent (#ffffff08 background), 1px border rgba(255,255,255,0.1), border-radius 14px.
+Text: white (#ffffff) primary, rgba(200,230,255,0.65) secondary.
+Accent color: aurora teal (#00e5b0) or aurora violet (#9d7fff) — for buttons, highlights, active states.
+Buttons: solid accent fill, border-radius 8px, subtle glow: box-shadow: 0 0 16px rgba(0,229,176,0.3).
+No hard shadows — everything should feel soft, atmospheric, luminous.
+Apply to: background system, all cards and panels, buttons, typography, input fields.

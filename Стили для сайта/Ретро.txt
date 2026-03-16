@@ -1,0 +1,8 @@
+Redesign the site in a dark retro / vintage style (80s–90s aesthetic).
+Background: very dark (#0d0d0d or #1a1209). Accent colors: amber (#f5a623), warm yellow (#ffe066), muted red (#c0392b).
+Use monospace or slab-serif fonts (Courier New, Special Elite, or Playfair Display).
+Add subtle scanline texture overlay (CSS repeating-linear-gradient with very low opacity).
+UI elements: pixel-style borders (border: 2px solid), retro badge shapes, uppercase labels with letter-spacing.
+Buttons: solid fill with no radius, hover with invert effect.
+Cards: slight sepia tint (filter: sepia(0.2)), faded photo effect on images.
+Apply consistently to all components and global CSS.

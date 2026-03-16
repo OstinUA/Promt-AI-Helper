@@ -1,0 +1,11 @@
+Redesign the site in Apple's dark design language (macOS / iOS dark mode aesthetic).
+Background: system dark gray (#1c1c1e for primary, #2c2c2e for elevated surfaces, #3a3a3c for cards).
+Text: pure white (#ffffff) primary, secondary (#ebebf5 at 60% opacity), tertiary (#ebebf5 at 30% opacity).
+Accent: system blue (#0a84ff) or adjust to brand color — apply consistently to links, buttons, focus states.
+Typography: SF Pro Display / SF Pro Text fallback stack: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif. Use proper optical sizing.
+Borders: none or ultra-thin (0.5px, rgba(255,255,255,0.15)).
+Blur effects: backdrop-filter: blur(20px) saturate(180%) on navbars and modals — frosted glass panels.
+Corners: border-radius: 12px for cards, 10px for buttons, 8px for inputs.
+Shadows: subtle, dark-adapted (box-shadow: 0 4px 24px rgba(0,0,0,0.5)).
+Animations: spring-like, smooth (ease-in-out, 350–500ms). No abrupt transitions.
+Apply to all components, CSS variables, and typography scale.
