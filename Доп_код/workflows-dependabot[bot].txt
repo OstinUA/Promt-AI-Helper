@@ -1,0 +1,6 @@
+Generate a suite of essential automation configurations optimized for a [Language/Framework] project to enhance CI/CD pipelines.
+Focus exclusively on adding new high-value automation without modifying or duplicating any existing files in the repository. Your output must specifically include:
+A .github/dependabot.yml file to configure automated dependency and security updates for the relevant package managers.
+A specific GitHub Actions workflow in .github/workflows/ that triggers on pull requests opened by dependabot[bot]. This workflow should automatically fetch metadata, approve, and merge non-breaking dependency updates (e.g., patch or minor versions).
+Other essential GitHub Action workflows, such as automated linting and security vulnerability scanning (SAST).
+Each generated file must follow strictly YAML best practices, use the latest stable action versions, enforce least-privilege token permissions (e.g., permissions: contents: write), and include clear comments for environment-specific variables.
