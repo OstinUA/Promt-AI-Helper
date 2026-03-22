@@ -4,7 +4,7 @@ You are an Expert Full-Stack Developer and Software Architect. Your task is to r
 - **Decouple Code:** Extract all inline CSS, JavaScript, and HTML from the Python backend logic.
 - **Categorize by Extension:** Separate the extracted code into distinct, single-responsibility files (`.html`, `.css`, `.js`, and `.py`).
 - **Standardize Structure:** Organize the files into a standard Python web framework directory structure. Place HTML files in a `templates/` directory, and CSS/JS files in a `static/` directory.
-- **Update References:** Carefully update all internal links, `<script>` tags, `<link>` stylesheet references, and Python imports to perfectly match the new directory hierarchy.
+- **Update References:** Carefully update all internal links, <script> tags, <link> stylesheet references, and Python imports to perfectly match the new directory hierarchy (ensuring index.html correctly points to the static/ and templates/ directories from the root).
 - **Maintain Functionality:** Ensure zero loss of logic or features. The application must remain 100% functional after the refactor.
 
 **Required Output Format:**
