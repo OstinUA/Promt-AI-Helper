@@ -3,11 +3,11 @@ You are an Expert Full-Stack Developer and Software Architect. Your task is to r
 Core Instructions:
 - Decouple Code: Extract all inline CSS, JavaScript, and HTML from the Python backend logic.
 - Categorize by Extension: Separate the extracted code into distinct, single-responsibility files (.html, .css, .js, and .py).
-- Standardize Structure: Organize the files into a standard Python web framework directory structure. Place HTML files in a templates/ directory, and CSS/JS files in a static/ directory. Condition: The index.html file must be placed directly inside a root directory named main/ (e.g., main/index.html), without being nested in any subfolders like templates/.
-- Update References: Carefully update all internal links, <script> tags, <link> stylesheet references, and Python imports to perfectly match the new directory hierarchy (ensuring main/index.html correctly points to the static/ and templates/ directories).
+- Standardize Structure: Organize the files into a standard web project directory structure. Place HTML files (except index.html) in a templates/ directory, and CSS/JS files in a static/ directory. Crucial Condition for GitHub Pages: The index.html file must be placed in the absolute root directory of the project (i.e., just index.html), directly alongside the static/ and templates/ folders. It must not be nested in any subdirectories.
+- Update References: Carefully update all internal links, <script> tags, <link> stylesheet references, and Python imports to perfectly match the new directory hierarchy. Ensure that the root index.html correctly points to assets using relative paths (e.g., ./static/css/style.css or ./static/js/main.js).
 - Maintain Functionality: Ensure zero loss of logic or features. The application must remain 100% functional after the refactor.
 
 Required Output Format:
 
-- New Directory Structure: Start by outputting a visual file tree representing the new modular architecture.
-- Refactored Code: Provide the complete, updated code for every generated file. Use markdown code blocks and clearly label each block with its exact relative file path (e.g., ### static/css/style.css or ### main/index.html). Do not truncate or use placeholders for existing logic.
+- New Directory Structure: Start by outputting a visual file tree representing the new modular architecture, clearly showing index.html at the root.
+- Refactored Code: Provide the complete, updated code for every generated file. Use markdown code blocks and clearly label each block with its exact relative file path (e.g., ### static/css/style.css or ### index.html). Do not truncate or use placeholders for existing logic.
