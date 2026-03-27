@@ -11,6 +11,7 @@ Core Instructions:
   > [!IMPORTANT]
   > [!WARNING]
   > [!CAUTION]
+- Use `<details>` and `<summary>` HTML tags to encapsulate lengthy output, deep-dive explanations, edge cases, or exhaustive configuration tables. This keeps the main document clean and scannable while preserving maximum technical depth.
 
 Please structure the generated `README.md` strictly using the following sections:
 
@@ -27,24 +28,26 @@ Please structure the generated `README.md` strictly using the following sections
 
 4. Tech Stack & Architecture
    - Core languages, frameworks, and dependencies used.
-   - Project Structure: Provide a visual file tree representation.
-   - Key Design Decisions: Explain the underlying architectural choices. Use Mermaid.js diagrams to illustrate data flow, system design, or logging pipelines if beneficial.
+   - Project Structure: Provide a visual file tree representation (wrap large or deep file trees in `<details>`).
+   - Key Design Decisions: Explain the underlying architectural choices. Use Mermaid.js diagrams to illustrate data flow, system design, or logging pipelines if beneficial (wrap complex architectural explanations or large Mermaid diagrams inside `<details>` with a descriptive `<summary>`).
 
 5. Getting Started
    - Prerequisites: List required system dependencies (e.g., Node.js, Docker, Python version).
-   - Installation: Provide step-by-step terminal commands to clone the repository and install dependencies.
+   - Installation: Provide step-by-step terminal commands to clone the repository and install dependencies. Include troubleshooting steps or alternative installation methods (like building from source) inside a `<details>` block.
 
 6. Testing
    - Instructions for running the test suite. Include exact commands for unit tests, integration tests, and linters (e.g., `pytest`, `npm run test`, `flake8`).
 
 7. Deployment
-   - Guidelines for production deployment. Include instructions for building the project, CI/CD pipeline integration, or containerization (e.g., Docker Compose).
+   - Guidelines for production deployment. Include instructions for building the project, CI/CD pipeline integration, or containerization (e.g., Docker Compose). 
 
 8. Usage
    - Provide clear, practical code examples showing how to initialize and utilize the library. Use syntax-highlighted code blocks with inline comments explaining the logic.
+   - Show basic usage directly in the main view, but strictly wrap "Advanced Usage", "Custom Formatters", or specific "Edge Cases" inside `<details>` blocks.
 
 9. Configuration
    - A detailed breakdown of available configuration options, including environment variables (`.env`), startup flags, and configuration file structures.
+   - Use `<details>` to wrap exhaustive configuration tables or full default `.json`/`.yaml` file schemas.
 
 10. License
     - Specify the open-source license type (e.g., MIT, Apache 2.0) to clarify usage rights.
