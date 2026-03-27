@@ -1,0 +1,19 @@
+**Prompt:**
+
+**Context:**
+I have a web project deployed on Vercel that generates animated ASCII shapes (donut, solid cube, hollow cube, triangle) using client-side JavaScript. It currently renders to an SVG/HTML canvas and has a feature to download the animation as an SVG or GIF. 
+
+**Problem:**
+The current "Badge Markdown" generator produces a static link to shields.io (e.g., `![OstinUA](https://img.shields.io/badge/OstinUA-donut-3f88e6)`). This just shows a static text badge in a GitHub README. I want the GitHub README badge to actually display the live, animated ASCII figure that my application generates.
+
+**Task:**
+Refactor the project to generate the animated SVG dynamically via a backend API so it can be embedded directly into GitHub READMEs (or anywhere else) as an animated image.
+
+**Requirements:**
+1. **Create a Vercel Serverless Function:** Create a Node.js serverless function in the `api/` directory (e.g., `api/badge.js`).
+2. **Port Rendering Logic to Backend:** Extract the 3D math, rotation logic, and ASCII frame generation from my client-side `static/js/main.js` and adapt it to run in Node.js. It should accept query parameters from the URL (e.g., `?profile=donut&label=OstinUA&theme=dark`).
+3. **Generate Animated SVG:** The function must generate a multi-frame animated SVG string. It should use CSS `@keyframes` to animate the opacity of the frames to create the loop (exactly like the logic already used in my client-side `download-svg-btn` function).
+4. **Set Correct HTTP Headers:** The endpoint must return the SVG string with the correct HTTP headers: `Content-Type: image/svg+xml` and appropriate `Cache-Control` headers so GitHub respects it as a valid, renderable image.
+5. **Update Frontend UI:** Modify the client-side `main.js` so that the "Badge Markdown" output field generates a markdown image pointing to this new API endpoint instead of `img.shields.io`. Example: `![Animated ASCII](https://<my-vercel-domain>/api/badge?profile=donut&label=OstinUA)`.
+
+Please write the complete code for the Node.js serverless API function and show exactly what changes I need to make to my `main.js` to implement this.
