@@ -1,1 +1,13 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **Performance Optimization:** Under-the-hood enhancements to the background data fetching logic, resulting in slightly faster processing of text files.
+* **Bug Fixes:** Resolved a couple of minor edge-case issues related to cache synchronization and rare anomalies in domain name parsing.
+* **General Maintenance:** Routine code refactoring and structural stability improvements to ensure smoother day-to-day operation across all supported pages.
 
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Оптимизация производительности:** Проведены скрытые технические работы по улучшению фоновой загрузки данных, что позволяет немного быстрее обрабатывать текстовые файлы.
+* **Исправление ошибок:** Устранена пара редких недочетов, которые могли возникать при синхронизации локального кэша и обработке специфических доменных имен.
+* **Общее обслуживание:** Выполнен рутинный рефакторинг скриптов и общая стабилизация работы, чтобы расширение функционировало более плавно в повседневных задачах.
