@@ -1,0 +1,11 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **Typography & Contrast:** Updated font weights and color contrast ratios within the main popup to improve overall text readability.
+* **Backend Stability:** Applied general under-the-hood maintenance patches to ensure sustained stability across extended browser sessions.
+
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Типографика и контрастность:** Обновлена насыщенность шрифтов и коэффициенты цветового контраста в главном окне для улучшения общей читаемости текста.
+* **Стабильность бэкенда:** Применены общие технические патчи для обеспечения устойчивой стабильности при длительных сессиях работы в браузере.
