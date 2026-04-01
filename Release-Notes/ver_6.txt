@@ -1,0 +1,11 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **Codebase Modernization:** Refactored several legacy code components to strictly align with the latest browser extension standards. 
+* **Future-proofing:** This invisible architectural update paves the way for upcoming feature rollouts while seamlessly maintaining our current reliability.
+
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Модернизация кодовой базы:** Проведен рефакторинг нескольких устаревших компонентов кода в строгом соответствии с новейшими стандартами расширений для браузеров.
+* **Задел на будущее:** Это невидимое архитектурное обновление подготавливает надежную основу для развертывания будущих функций, полностью сохраняя текущую надежность работы.
