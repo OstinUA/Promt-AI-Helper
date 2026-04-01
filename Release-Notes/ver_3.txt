@@ -1,0 +1,11 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **Memory Optimization:** Optimized the memory footprint when handling extremely large text datasets, reducing background resource usage.
+* **Badge Sync:** Resolved a rare edge-case issue where the status badge would experience a slight delay in updating after a rapid tab switch.
+
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Оптимизация памяти:** Оптимизировано потребление памяти при работе с очень большими наборами текстовых данных, что снижает использование фоновых ресурсов.
+* **Синхронизация значка:** Устранена редкая проблема, из-за которой значок статуса мог обновляться с небольшой задержкой после быстрого переключения вкладок.
