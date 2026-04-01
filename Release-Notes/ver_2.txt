@@ -1,0 +1,11 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **UI Scaling:** Minor layout adjustments in the analyzer tab to ensure better scaling and visual alignment on smaller screens.
+* **Data Processing:** Enhanced internal data parsing algorithms for slightly faster file reading and rendering.
+
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Масштабирование интерфейса:** Небольшие корректировки макета во вкладке анализатора для лучшего масштабирования и визуального выравнивания на маленьких экранах.
+* **Обработка данных:** Улучшены внутренние алгоритмы парсинга данных для немного более быстрого чтения и рендеринга файлов.
