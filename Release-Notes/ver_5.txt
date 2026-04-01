@@ -1,0 +1,11 @@
+## EN: Release Notes — Version 0.0.0
+### Key Improvements:
+* **Network Reliability:** Improved network timeout handling for slow-responding external endpoints to prevent infinite loading states.
+* **Visual Polish:** Minor CSS styling fixes in the settings panel to ensure consistent padding and margin behaviors.
+
+---
+
+## RU: Release Notes — Версия 0.0.0
+### Основные улучшения:
+* **Сетевая надежность:** Улучшена обработка сетевых таймаутов для медленно отвечающих внешних серверов, чтобы предотвратить зависание индикатора загрузки.
+* **Визуальная полировка:** Мелкие исправления CSS-стилей в панели настроек для обеспечения единообразного отображения отступов и полей.
