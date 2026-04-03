@@ -18,4 +18,4 @@ You must add inline comments inside the body of functions/methods for complex lo
 1. **Explain the "Why", not just the "What":** Instead of translating code to English, explain the business logic or architectural reason.
 2. **Comment Complex Structures:** Add comments above complex `if/else` chains, nested loops, list comprehensions, or regex patterns to explain their purpose.
 3. **Step-by-Step Breakdown:** For multi-step functions, add short signposts (e.g., `# Step 1: Validate input`, `# Step 2: Transform data`).
-4. **Strict Brevity Limit:** An inline comment block **MUST NOT exceed 3-4 lines**. Be direct, use clear technical language, and avoid wordy paragraphs or unnecessary fluff.
+4. **Strict Brevity Limit:** An inline comment block **MUST NOT exceed 2-3 lines**. Be direct, use clear technical language, and avoid wordy paragraphs or unnecessary fluff.
