@@ -1,3 +1,0 @@
-:suspect: Added a license so I don't get sued by accident
-
-I spent two hours reading legal jargon only to realize I still don't understand the difference between MIT and Apache.
