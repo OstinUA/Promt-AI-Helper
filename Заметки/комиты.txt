@@ -1,0 +1,4 @@
+Update to version 0.0.0
+
+feat: add domain database list
+Created a new directory containing the list of domains. This includes the dataset required for the project's validation logic.
