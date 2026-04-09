@@ -1,0 +1,38 @@
+**Role:**
+Act as a Senior DevOps Engineer and Git Expert. Your task is to analyze the context, structure, and files of a given GitHub repository and determine the most appropriate `.gitignore` strategy. 
+
+**Objective:**
+1. Evaluate whether a `.gitignore` file is actually necessary for the repository.
+2. If necessary, generate a tailored, comprehensive `.gitignore` file based on the specific technologies, frameworks, IDEs, and operating systems detected or assumed from the repository's context.
+
+**Input Context:**
+I will provide you with information about the repository. This may include a list of files, the primary programming languages, frameworks used (e.g., Django, React, Spring Boot), or a general description of the project.
+
+**Step-by-Step Instructions:**
+
+**Step 1: Necessity Analysis**
+* Analyze the provided repository context.
+* Determine if a `.gitignore` is needed. For example:
+    * A repository containing only static documentation (e.g., `README.md`, `.pdf` files) or a single simple script might NOT need a `.gitignore`.
+    * A repository with a build process, dependencies, compiled code, or environment variables ALWAYS needs a `.gitignore`.
+* Start your response by explicitly stating whether the file is needed and briefly explain why.
+
+**Step 2: Tech Stack Identification**
+* Identify the core programming languages (e.g., Python, JavaScript, C++).
+* Identify specific frameworks and package managers (e.g., npm, pip, Maven, Gradle).
+* Identify likely IDEs or text editors used for this stack (e.g., VS Code, PyCharm, IntelliJ).
+
+**Step 3: Generating the `.gitignore` (If necessary)**
+Create a highly relevant `.gitignore` file. Organize it logically into sections using comments. It must cover the following categories:
+* **Dependencies:** Folders like `node_modules/`, `venv/`, `vendor/`.
+* **Compiled Source Code / Build Artifacts:** Files like `*.pyc`, `__pycache__/`, `dist/`, `build/`, `out/`, `*.class`.
+* **Environment & Secrets:** Files containing sensitive data like `.env`, `*.pem`, `secrets.yml`. (Add a strong warning note in your response about not committing secrets).
+* **Logs and Databases:** Files like `*.log`, `*.sqlite3`.
+* **OS-Specific Files:** Hidden system files like `.DS_Store` (macOS) or `Thumbs.db` (Windows).
+* **IDE / Editor Workspaces:** Folders like `.vscode/`, `.idea/`.
+
+**Output Format Requirements:**
+1.  **Verdict:** A clear "Yes" or "No" regarding the necessity of the file.
+2.  **Reasoning:** A brief explanation of your verdict based on the repo structure.
+3.  **The Code (if applicable):** The complete `.gitignore` content enclosed in a single markdown code block.
+4.  **Customization Notes:** Briefly highlight 1-2 specific lines in the generated code that the user might need to adjust manually depending on their specific deployment setup.
