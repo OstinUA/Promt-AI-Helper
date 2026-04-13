@@ -1,15 +1,4 @@
-<div align="left">
-
-<pre>
-███████╗███████╗ ██████╗██╗   ██╗██████╗ ██╗████████╗██╗   ██╗
-██╔════╝██╔════╝██╔════╝██║   ██║██╔══██╗██║╚══██╔══╝╚██╗ ██╔╝
-███████╗█████╗  ██║     ██║   ██║██████╔╝██║   ██║    ╚████╔╝ 
-╚════██║██╔══╝  ██║     ██║   ██║██╔══██╗██║   ██║     ╚██╔╝  
-███████║███████╗╚██████╗╚██████╔╝██║  ██║██║   ██║      ██║   
-╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   
-</pre>
-
-</div>
+[![SECURITY](https://github.com/OstinUA/Promt-AI-Helper/blob/main/Additional%20files/Image/SECURITY.svg)](https://github.com/OstinUA)
 
 [![Security Policy](https://img.shields.io/badge/Security-Policy-red?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/OstinUA)
 [![Report Vulnerability](https://img.shields.io/badge/Report-Vulnerability-orange?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OstinUA)
