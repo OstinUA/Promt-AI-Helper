@@ -13,7 +13,7 @@
 
 [![Security Policy](https://img.shields.io/badge/Security-Policy-red?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/OstinUA)
 [![Report Vulnerability](https://img.shields.io/badge/Report-Vulnerability-orange?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OstinUA)
-[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=3e80ed&height=2&)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=e05d44&height=2&)](https://github.com/OstinUA)
 
 Security is something I take seriously. If you've found a vulnerability in any of my projects, I genuinely appreciate you taking the time to let me know — responsibly.
 
@@ -24,7 +24,7 @@ Security is something I take seriously. If you've found a vulnerability in any o
 Instead, report them privately so we have time to address the issue before it becomes public knowledge. You can do this via:
 
 * **GitHub Private Security Advisory** — go to the `Security` tab of the relevant repository and click `Report a vulnerability`.
-* **Direct message** — reach out to me on Telegram: [@FCTostin](https://t.me/FCTostin)
+* **Direct message** — reach out to me on Discussions: [Readme/OstinUA](https://github.com/OstinUA/OstinUA/discussions/categories/reporting-a-vulnerability)
 
 Please include as much detail as possible:
 - A clear description of the vulnerability
@@ -40,7 +40,7 @@ Please include as much detail as possible:
 
 ## ⬢ Scope
 
-This policy applies to all public repositories under the [OstinUA](https://github.com/OstinUA) GitHub account and the [readme-SVG](https://github.com/readme-SVG) organization.
+This policy applies to all public repositories under the [OstinUA](https://github.com/OstinUA) GitHub account and all other organizations or projects owned or managed by this user.
 
 ## ⬢ Out of Scope
 
@@ -50,4 +50,4 @@ This policy applies to all public repositories under the [OstinUA](https://githu
 
 Thank you for helping keep this project and its users safe.
 
-[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=3e80ed&height=2&)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=e05d44&height=2&)](https://github.com/OstinUA)
