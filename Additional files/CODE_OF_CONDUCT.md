@@ -20,7 +20,7 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor_Covenant-2.1-4baaaa?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://www.contributor-covenant.org)
 [![Be Kind](https://img.shields.io/badge/Be-Kind-brightgreen?style=for-the-badge&logo=heart&logoColor=white)](https://github.com/OstinUA)
-[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=3e80ed&height=2&)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=4baaaa&height=2&)](https://github.com/OstinUA)
 
 This is an open and welcoming space. Everyone who participates — whether by opening an Issue, submitting a PR, or just leaving a comment — is expected to treat others with basic respect. That's really all this comes down to.
 
@@ -42,13 +42,13 @@ Things that are not acceptable:
 
 ## ⬢ Scope
 
-This Code of Conduct applies to all spaces managed under the [OstinUA](https://github.com/OstinUA) GitHub account and the [readme-SVG](https://github.com/readme-SVG) organization — Issues, Pull Requests, Discussions, and any other project-related communication.
+This policy applies to all public repositories under the [OstinUA](https://github.com/OstinUA) GitHub account and all other organizations or projects owned or managed by this user.
 
 ## ⬢ Enforcement
 
 If you witness or experience behavior that violates this Code of Conduct, please report it:
 
-* **Telegram:** [@FCTostin](https://t.me/FCTostin)
+* **Direct message** — reach out to me on Discussions: [Readme/OstinUA](https://github.com/OstinUA/OstinUA/discussions/categories/reporting-a-vulnerability)
 * **GitHub Private Security Advisory** — if the situation calls for it
 
 All reports will be handled with discretion. I'll review the situation and take whatever action seems appropriate, which may include a warning, temporary restriction, or permanent removal from the project space.
@@ -59,4 +59,4 @@ This Code of Conduct is inspired by the [Contributor Covenant](https://www.contr
 
 The main rule is simple: be the kind of contributor you'd want to work with.
 
-[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=3e80ed&height=2&)](https://github.com/OstinUA)
+[![OstinUA](https://capsule-render.vercel.app/api?type=rect&color=4baaaa&height=2&)](https://github.com/OstinUA)
