@@ -1,22 +1,4 @@
-<div align="left">
-
-<pre>
- ██████╗ ██████╗ ██████╗ ███████╗     ██████╗ ███████╗
-██╔════╝██╔═══██╗██╔══██╗██╔════╝    ██╔═══██╗██╔════╝
-██║     ██║   ██║██║  ██║█████╗      ██║   ██║█████╗  
-██║     ██║   ██║██║  ██║██╔══╝      ██║   ██║██╔══╝  
-╚██████╗╚██████╔╝██████╔╝███████╗    ╚██████╔╝██║     
- ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝     ╚═════╝ ╚═╝     
-
- ██████╗ ██████╗ ███╗   ██╗██████╗ ██╗   ██╗ ██████╗████████╗
-██╔════╝██╔═══██╗████╗  ██║██╔══██╗██║   ██║██╔════╝╚══██╔══╝
-██║     ██║   ██║██╔██╗ ██║██║  ██║██║   ██║██║        ██║   
-██║     ██║   ██║██║╚██╗██║██║  ██║██║   ██║██║        ██║   
-╚██████╗╚██████╔╝██║ ╚████║██████╔╝╚██████╔╝╚██████╗   ██║   
- ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚═════╝   ╚═╝   
-</pre>
-
-</div>
+[![CODE_OF_CONDUCT](https://github.com/OstinUA/Promt-AI-Helper/blob/main/Additional%20files/Image/CODE_OF_CONDUCT.svg)](https://github.com/OstinUA)
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor_Covenant-2.1-4baaaa?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://www.contributor-covenant.org)
 [![Be Kind](https://img.shields.io/badge/Be-Kind-brightgreen?style=for-the-badge&logo=heart&logoColor=white)](https://github.com/OstinUA)
