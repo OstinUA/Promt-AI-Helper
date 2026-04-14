@@ -1,7 +1,8 @@
 Act as an expert in Open Source project promotion and GitHub SEO. Your main goal is to analyze my repository and optimize its presentation so that developers can easily find it through tag searches and are motivated to star it.
-Repository details: [Insert repository link, code, or brief description here]
+
 Please complete the following tasks:
 1. Titles: Provide 5 options for a relevant and catchy repository name that is SEO-friendly and clearly communicates the project's purpose.
-2. Description: Write a repository description in English. Strict length limit: 250-290 characters. Tone: strictly professional, concise, and straight to the point (no fluff). Highlight the core value proposition for the user (why it is worth using and starring). Place exactly 1 emoji at the very beginning of the description that best fits the repository's theme. Organically integrate relevant search keywords.
-3. Topics: Create a list of exactly 20 highly relevant and up-to-date topics (tags) in English. Choose tags that have a good search volume on GitHub to maximize visibility.
+2. Description: Write a repository description in English. Strict length limit: 250-290 characters. Tone: strictly professional, concise, and straight to the point (no fluff). Highlight the core value proposition for the user (why it is worth using and starring). The very first character of the description must be exactly 1 emoji that maximally fits the repository's theme. Organically integrate relevant search keywords.
+3. Topics: Create a list of exactly 20 highly relevant and up-to-date topics (tags) in English. You must explicitly include the tag "contributions-welcome" in this list. Choose the remaining 19 tags based on good search volume on GitHub to maximize visibility.
+
 Output format for Topics: Each topic must be printed on a strictly new line. Do not use numbers, bullet points, or commas.
