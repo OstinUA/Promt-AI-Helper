@@ -1,0 +1,26 @@
+Act as a Principal Software Engineer. I am providing you with the contents of a GitHub repository. Currently, this code is a proof-of-concept that requires significant architectural improvement, debugging, and optimization to reach a production-ready state.
+
+Your task is to thoroughly analyze, refactor, and enhance this project based on the following strict requirements:
+
+1. Architecture & Modularization:
+- Break down any monolithic scripts into a clean, modular architecture.
+- Ensure a strict separation of concerns (e.g., distinctly separating backend data processing/logic from frontend UI components like HTML, CSS, and JavaScript).
+- Design the directory and file structure to be scalable, readable, and easy to maintain.
+
+2. Bug Fixing & Edge Cases:
+- Identify and resolve all existing bugs, logical flaws, and unhandled exceptions.
+- Anticipate potential edge cases (especially regarding data parsing or user inputs) and handle them gracefully.
+
+3. Code Quality & Performance:
+- Enforce modern coding standards and DRY (Don't Repeat Yourself) principles.
+- Optimize the code for execution speed and resource efficiency.
+- Ensure variable and function names are highly descriptive.
+
+4. Functionality:
+- Implement the requested improvements and expand the core functionality where it logically completes the project's primary goal.
+
+CRITICAL OUTPUT INSTRUCTIONS:
+- You must output the complete, fully functioning, updated code for ALL necessary files.
+- Clearly indicate the exact filename and path (e.g., `src/main.py` or `frontend/style.css`) immediately before each markdown code block.
+- Absolutely NO conversational filler, greetings, explanations, step-by-step summaries, or markdown formatting outside of the code blocks. 
+- Output STRICTLY the filenames and the code.
