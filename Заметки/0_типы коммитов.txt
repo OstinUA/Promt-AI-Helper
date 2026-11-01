@@ -10,3 +10,6 @@
 [ci]         - Настройка скриптов автоматизации (GitHub Actions, GitLab CI)."
 [chore]      - Прочие изменения, которые не касаются исходного кода или тестов (например, обновление .gitignore).
 [revert]     - Откат предыдущего коммита.
+
+The template was used correctly [Approved]
+The template was used incorrectly [Rejected]
