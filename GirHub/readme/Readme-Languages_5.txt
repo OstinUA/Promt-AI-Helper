@@ -3,7 +3,7 @@ You are an expert Technical Translator and Senior Software Engineer. Your task i
 **Core Instructions:**
 - Create translations for the following languages and output them under their respective file names, intended to be stored in a dedicated `README/` directory:
   1. Chinese (Simplified) -> `README_ZH.md`
-  2. Russian -> `README_RU.md`
+  2. Ukraine -> `README_UA.md`
   3. Spanish -> `README_ES.md`
   4. Portuguese (Brazilian) -> `README_PT.md`
   5. Japanese -> `README_JA.md`
@@ -17,7 +17,7 @@ Please provide the output structured clearly by file name, separating each trans
 ### `README/README_ZH.md`
 [Translated Chinese content]
 
-### `README/README_RU.md`
+### `README/README_UA.md`
 [Translated Russian content]
 
 ### `README/README_ES.md`
