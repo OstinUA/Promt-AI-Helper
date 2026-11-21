@@ -18,7 +18,7 @@ Please provide the output structured clearly by file name, separating each trans
 [Translated Chinese content]
 
 ### `README/README_UA.md`
-[Translated Russian content]
+[Translated Ukraine content]
 
 ### `README/README_ES.md`
 [Translated Spanish content]
